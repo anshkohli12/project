@@ -1,0 +1,137 @@
+{
+  "owners": [
+    {
+      "id": "1",
+      "username": "piazza_owner",
+      "password": "owner123",
+      "restaurantId": 1,
+      "email": "piazza@example.com"
+    },
+    {
+      "id": "2",
+      "username": "sushi_master",
+      "password": "owner123",
+      "restaurantId": 2,
+      "email": "sushi@example.com"
+    },
+    {
+      "id": "3",
+      "username": "spice_garden",
+      "password": "owner123",
+      "restaurantId": 3,
+      "email": "spice@example.com"
+    },
+    {
+      "id": "4",
+      "username": "dragon_wok",
+      "password": "owner123",
+      "restaurantId": 4,
+      "email": "dragon@example.com"
+    },
+    {
+      "id": "5",
+      "username": "burger_bros",
+      "password": "owner123",
+      "restaurantId": 5,
+      "email": "burger@example.com"
+    },
+    {
+      "id": "6",
+      "username": "med_oasis",
+      "password": "owner123",
+      "restaurantId": 6,
+      "email": "oasis@example.com"
+    },
+    {
+      "id": "7",
+      "username": "taco_fiesta",
+      "password": "owner123",
+      "restaurantId": 7,
+      "email": "taco@example.com"
+    },
+    {
+      "id": "8",
+      "username": "seoul_kitchen",
+      "password": "owner123",
+      "restaurantId": 8,
+      "email": "seoul@example.com"
+    },
+    {
+      "id": "9",
+      "username": "thai_orchid",
+      "password": "owner123",
+      "restaurantId": 9,
+      "email": "thai@example.com"
+    },
+    {
+      "id": "10",
+      "username": "pho_delights",
+      "password": "owner123",
+      "restaurantId": 10,
+      "email": "pho@example.com"
+    },
+    {
+      "id": "11",
+      "username": "italian_corner",
+      "password": "owner123",
+      "restaurantId": 11,
+      "email": "corner@example.com"
+    },
+    {
+      "id": "12",
+      "username": "green_leaf",
+      "password": "owner123",
+      "restaurantId": 12,
+      "email": "green@example.com"
+    },
+    {
+      "id": "13",
+      "username": "seafood_harbor",
+      "password": "owner123",
+      "restaurantId": 13,
+      "email": "seafood@example.com"
+    },
+    {
+      "id": "14",
+      "username": "french_bistro",
+      "password": "owner123",
+      "restaurantId": 14,
+      "email": "bistro@example.com"
+    },
+    {
+      "id": "15",
+      "username": "thai_spice",
+      "password": "owner123",
+      "restaurantId": 15,
+      "email": "thaispice@example.com"
+    },
+    {
+      "id": "25",
+      "username": "ansh",
+      "password": "1234",
+      "email": "koh@gmail.com",
+      "restaurantId": "25"
+    },
+    {
+      "id": "26",
+      "username": "bjhn",
+      "password": "1234",
+      "email": "dcwgjudbvvgsw.@gmail.com",
+      "restaurantId": "26"
+    },
+    {
+      "id": "27",
+      "username": "arshg",
+      "password": "12347",
+      "email": "bhj@gm.cobvm",
+      "restaurantId": "27"
+    },
+    {
+      "id": "28",
+      "username": "ansh",
+      "password": "1234",
+      "email": "dcwgjudgsw.@gmail.com",
+      "restaurantId": "28"
+    }
+  ]
+}

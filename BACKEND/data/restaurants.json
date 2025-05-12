@@ -1,0 +1,510 @@
+{
+  "restaurants": [
+    {
+      "id": "1",
+      "name": "La Piazza",
+      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4",
+      "categories": [
+        "Italian",
+        "Pizza",
+        "Pasta"
+      ],
+      "rating": 4.8,
+      "deliveryTime": "30-40",
+      "address": "Shop 12, Connaught Place, New Delhi, 110001",
+      "cuisine": "Italian",
+      "isOpen": true,
+      "hasFreeDelivery": true,
+      "minOrder": 499,
+      "description": "Authentic Italian cuisine in the heart of Delhi"
+    },
+    {
+      "id": "2",
+      "name": "Sakura",
+      "image": "https://images.unsplash.com/photo-1579684947550-22e945225d9a",
+      "categories": [
+        "Japanese",
+        "Sushi",
+        "Asian"
+      ],
+      "rating": 4.7,
+      "deliveryTime": "40-50",
+      "address": "42, Linking Road, Bandra West, Mumbai, 400050",
+      "cuisine": "Japanese",
+      "isOpen": true,
+      "hasFreeDelivery": false,
+      "minOrder": 799,
+      "description": "Premium Japanese dining experience"
+    },
+    {
+      "id": "3",
+      "name": "Punjab Grill",
+      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4",
+      "categories": [
+        "Indian",
+        "North Indian",
+        "Mughlai"
+      ],
+      "rating": 4.9,
+      "deliveryTime": "35-45",
+      "address": "Plot 8, Sector 18, Chandigarh, 160018",
+      "cuisine": "North Indian",
+      "isOpen": true,
+      "hasFreeDelivery": true,
+      "minOrder": 599,
+      "description": "Authentic North Indian and Mughlai delicacies"
+    },
+    {
+      "id": "4",
+      "name": "Ming's Kitchen",
+      "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9",
+      "categories": [
+        "Chinese",
+        "Asian",
+        "Dim Sum"
+      ],
+      "rating": 4.6,
+      "deliveryTime": "45-55",
+      "address": "27, Park Street, Kolkata, 700016",
+      "cuisine": "Chinese",
+      "isOpen": true,
+      "hasFreeDelivery": false,
+      "minOrder": 699,
+      "description": "Authentic Chinese cuisine with a modern twist"
+    },
+    {
+      "id": "5",
+      "name": "Burger Factory",
+      "image": "https://images.unsplash.com/photo-1561758033-d89a9ad46330",
+      "categories": [
+        "American",
+        "Burgers",
+        "Fast Food"
+      ],
+      "rating": 4.5,
+      "deliveryTime": "25-35",
+      "address": "123, MG Road, Bangalore, 560001",
+      "cuisine": "American",
+      "isOpen": true,
+      "hasFreeDelivery": true,
+      "minOrder": 399,
+      "description": "Gourmet burgers and classic American favorites"
+    },
+    {
+      "id": 6,
+      "name": "Mediterranean Oasis",
+      "image": "https://images.unsplash.com/photo-1544124499-58912cbddaad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "categories": [
+        "Mediterranean",
+        "Greek",
+        "Turkish"
+      ],
+      "rating": 4.7,
+      "deliveryTime": 35,
+      "address": "890 Olive Grove, Staten Island, New York, NY 10006",
+      "cuisine": "Mediterranean",
+      "isOpen": true,
+      "hasFreeDelivery": true,
+      "minOrder": 20,
+      "description": "Fresh Mediterranean dishes with authentic flavors"
+    },
+    {
+      "id": 7,
+      "name": "Taco Fiesta",
+      "image": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "categories": [
+        "Mexican",
+        "Tacos",
+        "Latin"
+      ],
+      "rating": 4.6,
+      "deliveryTime": 25,
+      "address": "432 Salsa Avenue, Bronx, New York, NY 10007",
+      "cuisine": "Mexican",
+      "isOpen": true,
+      "hasFreeDelivery": true,
+      "minOrder": 15,
+      "description": "Authentic Mexican street food and traditional dishes",
+      "location": "ny"
+    },
+    {
+      "id": 8,
+      "name": "Seoul Kitchen",
+      "image": "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "categories": [
+        "Korean",
+        "BBQ",
+        "Asian"
+      ],
+      "rating": 4.8,
+      "deliveryTime": 35,
+      "address": "765 K-Town Road, Manhattan, New York, NY 10008",
+      "cuisine": "Korean",
+      "isOpen": true,
+      "hasFreeDelivery": false,
+      "minOrder": 25,
+      "description": "Korean BBQ and traditional dishes with modern presentation"
+    },
+    {
+      "id": 9,
+      "name": "Thai Orchid",
+      "image": "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "categories": [
+        "Thai",
+        "Asian",
+        "Curry"
+      ],
+      "rating": 4.7,
+      "deliveryTime": 30,
+      "address": "543 Spice Street, Queens, New York, NY 10009",
+      "cuisine": "Thai",
+      "isOpen": true,
+      "hasFreeDelivery": true,
+      "minOrder": 20,
+      "description": "Authentic Thai cuisine with fresh ingredients"
+    },
+    {
+      "id": 10,
+      "name": "Pho Delights",
+      "image": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "categories": [
+        "Vietnamese",
+        "Asian",
+        "Soup"
+      ],
+      "rating": 4.6,
+      "deliveryTime": 25,
+      "address": "234 Noodle Lane, Brooklyn, New York, NY 10010",
+      "cuisine": "Vietnamese",
+      "isOpen": true,
+      "hasFreeDelivery": true,
+      "minOrder": 15,
+      "description": "Authentic Vietnamese pho and traditional dishes"
+    },
+    {
+      "id": 11,
+      "name": "The Italian Corner",
+      "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "categories": [
+        "Italian",
+        "Pizza",
+        "Pasta"
+      ],
+      "rating": 4.8,
+      "deliveryTime": 25,
+      "address": "789 Pizza Lane, Brooklyn, New York, NY 10011",
+      "cuisine": "Italian",
+      "isOpen": true,
+      "hasFreeDelivery": true,
+      "minOrder": 20,
+      "description": "Corner Italian restaurant serving authentic Neapolitan pizza"
+    },
+    {
+      "id": 12,
+      "name": "Green Leaf",
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "categories": [
+        "Vegetarian",
+        "Healthy",
+        "Salads"
+      ],
+      "rating": 4.3,
+      "deliveryTime": 22,
+      "address": "456 Veggie Street, Manhattan, New York, NY 10012",
+      "cuisine": "Vegetarian",
+      "isOpen": true,
+      "hasFreeDelivery": true,
+      "minOrder": 15,
+      "description": "Fresh and healthy vegetarian dishes made with organic ingredients"
+    },
+    {
+      "id": 13,
+      "name": "Seafood Harbor",
+      "image": "https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "categories": [
+        "Seafood",
+        "Fish",
+        "Grill"
+      ],
+      "rating": 4.7,
+      "deliveryTime": 40,
+      "address": "789 Harbor Drive, Staten Island, New York, NY 10013",
+      "cuisine": "Seafood",
+      "isOpen": true,
+      "hasFreeDelivery": false,
+      "minOrder": 30,
+      "description": "Fresh seafood and grilled fish specialties"
+    },
+    {
+      "id": 14,
+      "name": "French Bistro",
+      "image": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "categories": [
+        "French",
+        "Wine",
+        "Fine Dining"
+      ],
+      "rating": 4.9,
+      "deliveryTime": 45,
+      "address": "123 Bistro Lane, Manhattan, New York, NY 10014",
+      "cuisine": "French",
+      "isOpen": true,
+      "hasFreeDelivery": false,
+      "minOrder": 35,
+      "description": "Classic French cuisine in an elegant bistro setting"
+    },
+    {
+      "id": 15,
+      "name": "Steakhouse Prime",
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "categories": [
+        "Steakhouse",
+        "American",
+        "Grill"
+      ],
+      "rating": 4.8,
+      "deliveryTime": 40,
+      "address": "456 Steak Avenue, Manhattan, New York, NY 10015",
+      "cuisine": "Steakhouse",
+      "isOpen": true,
+      "hasFreeDelivery": false,
+      "minOrder": 40,
+      "description": "Premium steaks and chops with classic steakhouse sides"
+    },
+    {
+      "id": 16,
+      "name": "Dim Sum Paradise",
+      "image": "https://images.unsplash.com/photo-1566123271758-0ce5e94c33c7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "categories": [
+        "Chinese",
+        "Dim Sum",
+        "Asian"
+      ],
+      "rating": 4.6,
+      "deliveryTime": 30,
+      "address": "789 Dim Sum Road, Chinatown, New York, NY 10016",
+      "cuisine": "Chinese",
+      "isOpen": true,
+      "hasFreeDelivery": true,
+      "minOrder": 20,
+      "description": "Authentic dim sum and Cantonese specialties"
+    },
+    {
+      "id": 17,
+      "name": "Mediterranean Grill",
+      "image": "https://images.unsplash.com/photo-1540914124281-342587941389?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "categories": [
+        "Mediterranean",
+        "Grill",
+        "Kebab"
+      ],
+      "rating": 4.5,
+      "deliveryTime": 35,
+      "address": "123 Mediterranean Ave, Queens, New York, NY 10017",
+      "cuisine": "Mediterranean",
+      "isOpen": true,
+      "hasFreeDelivery": true,
+      "minOrder": 25,
+      "description": "Grilled Mediterranean specialties and fresh mezze"
+    },
+    {
+      "id": 18,
+      "name": "Ramen House",
+      "image": "https://images.unsplash.com/photo-1557872943-16a5ac26437e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "categories": [
+        "Japanese",
+        "Ramen",
+        "Asian"
+      ],
+      "rating": 4.7,
+      "deliveryTime": 25,
+      "address": "456 Noodle Street, Manhattan, New York, NY 10018",
+      "cuisine": "Japanese",
+      "isOpen": true,
+      "hasFreeDelivery": true,
+      "minOrder": 15,
+      "description": "Authentic Japanese ramen with homemade noodles"
+    },
+    {
+      "id": 19,
+      "name": "Falafel King",
+      "image": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "categories": [
+        "Middle Eastern",
+        "Vegetarian",
+        "Street Food"
+      ],
+      "rating": 4.4,
+      "deliveryTime": 20,
+      "address": "789 Falafel Way, Brooklyn, New York, NY 10019",
+      "cuisine": "Middle Eastern",
+      "isOpen": true,
+      "hasFreeDelivery": true,
+      "minOrder": 12,
+      "description": "Best falafel and shawarma in town"
+    },
+    {
+      "id": 20,
+      "name": "BBQ Smokehouse",
+      "image": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "categories": [
+        "BBQ",
+        "American",
+        "Grill"
+      ],
+      "rating": 4.8,
+      "deliveryTime": 35,
+      "address": "123 Smoke Street, Brooklyn, New York, NY 10020",
+      "cuisine": "BBQ",
+      "isOpen": true,
+      "hasFreeDelivery": false,
+      "minOrder": 25,
+      "description": "Slow-smoked meats and classic BBQ sides"
+    },
+    {
+      "id": 21,
+      "name": "Pasta Paradise",
+      "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "categories": [
+        "Italian",
+        "Pasta",
+        "Wine"
+      ],
+      "rating": 4.6,
+      "deliveryTime": 30,
+      "address": "456 Pasta Lane, Manhattan, New York, NY 10021",
+      "cuisine": "Italian",
+      "isOpen": true,
+      "hasFreeDelivery": true,
+      "minOrder": 20,
+      "description": "Handmade pasta and authentic Italian sauces"
+    },
+    {
+      "id": 22,
+      "name": "Curry House",
+      "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "categories": [
+        "Indian",
+        "Curry",
+        "Tandoor"
+      ],
+      "rating": 4.5,
+      "deliveryTime": 35,
+      "address": "789 Curry Street, Queens, New York, NY 10022",
+      "cuisine": "Indian",
+      "isOpen": true,
+      "hasFreeDelivery": true,
+      "minOrder": 20,
+      "description": "Rich Indian curries and tandoori specialties"
+    },
+    {
+      "id": 23,
+      "name": "Sushi & More",
+      "image": "https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "categories": [
+        "Japanese",
+        "Sushi",
+        "Asian Fusion"
+      ],
+      "rating": 4.7,
+      "deliveryTime": 30,
+      "address": "123 Sushi Road, Manhattan, New York, NY 10023",
+      "cuisine": "Japanese",
+      "isOpen": true,
+      "hasFreeDelivery": false,
+      "minOrder": 30,
+      "description": "Creative sushi rolls and Japanese fusion dishes"
+    },
+    {
+      "id": 24,
+      "name": "Healthy Bowl",
+      "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      "categories": [
+        "Healthy",
+        "Bowls",
+        "Vegetarian"
+      ],
+      "rating": 4.4,
+      "deliveryTime": 20,
+      "address": "456 Health Avenue, Brooklyn, New York, NY 10024",
+      "cuisine": "Healthy",
+      "isOpen": true,
+      "hasFreeDelivery": true,
+      "minOrder": 15,
+      "description": "Nutritious bowls and smoothies for healthy living"
+    },
+    {
+      "id": "25",
+      "name": "njj",
+      "image": "https://plus.unsplash.com/premium_photo-1669295245622-568fecaf293f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "categories": [
+        "Indian",
+        "Curry",
+        "Tandoor"
+      ],
+      "rating": 4.5,
+      "deliveryTime": 25,
+      "cuisine": "nrjk",
+      "hasFreeDelivery": true,
+      "minOrder": 5256,
+      "description": "d fvuhyfnkjd",
+      "isOpen": true,
+      "menu": [],
+      "location": "fk rc"
+    },
+    {
+      "id": "26",
+      "name": "dsvdvds",
+      "image": "https://plus.unsplash.com/premium_photo-1669295245622-568fecaf293f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "categories": [
+        "Indian",
+        "Curry",
+        "Tandoor"
+      ],
+      "rating": 0,
+      "deliveryTime": 5665,
+      "cuisine": "Indian",
+      "hasFreeDelivery": true,
+      "minOrder": 544.96,
+      "description": "dvsbdrghdehebterrh",
+      "isOpen": true,
+      "menu": []
+    },
+    {
+      "id": "27",
+      "name": "dbd",
+      "image": "https://plus.unsplash.com/premium_photo-1669295245622-568fecaf293f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "categories": [
+        "Indian",
+        "Curry",
+        "Tandoor"
+      ],
+      "rating": 0,
+      "deliveryTime": 52,
+      "cuisine": "Indian",
+      "hasFreeDelivery": true,
+      "minOrder": 14,
+      "description": "fbddbdfnbhbdhndthtd",
+      "isOpen": true,
+      "menu": []
+    },
+    {
+      "id": "28",
+      "name": "jf kmf",
+      "image": "https://plus.unsplash.com/premium_photo-1669295245622-568fecaf293f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "categories": [
+        "Indian",
+        "Curry",
+        "Tandoor"
+      ],
+      "rating": 0,
+      "deliveryTime": 58,
+      "cuisine": "Indian",
+      "hasFreeDelivery": true,
+      "minOrder": 12,
+      "description": "jhgguygy",
+      "isOpen": true,
+      "menu": []
+    }
+  ]
+}

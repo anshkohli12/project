@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "ansh",
+      "email": "dcwgjudgsw.@gmail.com",
+      "password": "$2b$10$2YYWnFF87gHXYYLiWAsPYOzCAjtH1D631UFuEUAqynH57rVgQPuXq"
+    },
+    {
+      "id": "2",
+      "username": "gorang",
+      "email": "ioiug@gmail.com",
+      "password": "$2b$10$7j2Wf/VbjZNNW//aPW5ZCeitNx1fLpiCmYL2GtWLM.M1On/0MPMbW"
+    }
+  ]
+}

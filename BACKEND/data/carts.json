@@ -1,0 +1,21 @@
+{
+  "carts": [
+    {
+      "userId": "1",
+      "items": []
+    },
+    {
+      "userId": "undefined",
+      "items": [
+        {
+          "itemId": "1",
+          "name": "Margherita Pizza",
+          "price": 12.99,
+          "quantity": 1,
+          "restaurantId": "1",
+          "image": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca"
+        }
+      ]
+    }
+  ]
+}

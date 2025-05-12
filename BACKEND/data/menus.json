@@ -1,0 +1,247 @@
+{
+  "menus": [
+    {
+      "restaurantId": "1",
+      "items": [
+        {
+          "id": "1",
+          "name": "Margherita Pizza",
+          "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002",
+          "price": 399,
+          "type": "Veg",
+          "description": "Fresh mozzarella, tomatoes, and basil on thin crust",
+          "rating": 4.8
+        },
+        {
+          "id": "2",
+          "name": "Pasta Alfredo",
+          "image": "https://images.unsplash.com/photo-1645112411341-6c4fd023714a",
+          "price": 349,
+          "type": "Veg",
+          "description": "Creamy sauce with parmesan and fresh herbs",
+          "rating": 4.6
+        }
+      ]
+    },
+    {
+      "restaurantId": "2",
+      "items": [
+        {
+          "id": "1",
+          "name": "California Roll",
+          "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351",
+          "price": 449,
+          "type": "Non-Veg",
+          "description": "Crab, avocado, and cucumber roll",
+          "rating": 4.7
+        },
+        {
+          "id": "2",
+          "name": "Salmon Nigiri",
+          "image": "https://images.unsplash.com/photo-1583623025817-d180a2221d0a",
+          "price": 6.99,
+          "type": "Non-Veg",
+          "description": "Fresh salmon over hand-pressed sushi rice",
+          "rating": 4.9
+        },
+        {
+          "id": "3",
+          "name": "Miso Soup",
+          "image": "https://images.unsplash.com/photo-1578020190125-f4f7c18bc9cb",
+          "price": 3.99,
+          "type": "Veg",
+          "description": "Traditional Japanese soup with tofu and seaweed",
+          "rating": 4.5
+        },
+        {
+          "id": "4",
+          "name": "Tempura Udon",
+          "image": "https://images.unsplash.com/photo-1618841557871-b4664fbf0cb3",
+          "price": 399,
+          "type": "Non-Veg",
+          "description": "Udon noodles in hot soup with tempura prawns",
+          "rating": 4.6
+        },
+        {
+          "id": "5",
+          "name": "Miso Ramen",
+          "image": "https://images.unsplash.com/photo-1591814468924-caf88d1232e1",
+          "price": 349,
+          "type": "Non-Veg",
+          "description": "Traditional miso based ramen with pork",
+          "rating": 4.8
+        }
+      ]
+    },
+    {
+      "restaurantId": "3",
+      "items": [
+        {
+          "id": "1",
+          "name": "Butter Chicken",
+          "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398",
+          "price": 449,
+          "type": "Non-Veg",
+          "description": "Creamy tomato based curry with tender chicken",
+          "rating": 4.9
+        },
+        {
+          "id": "2",
+          "name": "Palak Paneer",
+          "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950",
+          "price": 13.99,
+          "type": "Veg",
+          "description": "Cottage cheese cubes in creamy spinach gravy",
+          "rating": 4.7
+        },
+        {
+          "id": "3",
+          "name": "Garlic Naan",
+          "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950",
+          "price": 79,
+          "type": "Veg",
+          "description": "Freshly baked bread with garlic and butter",
+          "rating": 4.6
+        },
+        {
+          "id": "4",
+          "name": "Biryani",
+          "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8",
+          "price": 17.99,
+          "type": "Non-Veg",
+          "description": "Aromatic rice dish with spices and tender meat",
+          "rating": 4.9
+        },
+        {
+          "id": "5",
+          "name": "Dal Makhani",
+          "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d",
+          "price": 299,
+          "type": "Veg",
+          "description": "Black lentils cooked overnight with cream",
+          "rating": 4.7
+        }
+      ]
+    },
+    {
+      "restaurantId": "4",
+      "items": [
+        {
+          "id": "1",
+          "name": "Dim Sum Platter",
+          "image": "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd",
+          "price": 18.99,
+          "type": "Non-Veg",
+          "description": "Assorted steamed dumplings with various fillings",
+          "rating": 4.8
+        },
+        {
+          "id": "2",
+          "name": "Kung Pao Chicken",
+          "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e",
+          "price": 399,
+          "type": "Non-Veg",
+          "description": "Spicy diced chicken with peanuts and vegetables",
+          "rating": 4.7
+        },
+        {
+          "id": "3",
+          "name": "Veg Spring Rolls",
+          "image": "https://images.unsplash.com/photo-1548507200-58fd0d57b3f2",
+          "price": 249,
+          "type": "Veg",
+          "description": "Crispy rolls filled with vegetables",
+          "rating": 4.5
+        },
+        {
+          "id": "4",
+          "name": "Hakka Noodles",
+          "image": "https://images.unsplash.com/photo-1634864572865-1c31f05d6e90",
+          "price": 299,
+          "type": "Veg",
+          "description": "Stir-fried noodles with vegetables",
+          "rating": 4.6
+        },
+        {
+          "id": "5",
+          "name": "Mapo Tofu",
+          "image": "https://images.unsplash.com/photo-1582450871972-ab5ca641643d",
+          "price": 12.99,
+          "type": "Veg",
+          "description": "Soft tofu in spicy sauce with minced vegetables",
+          "rating": 4.6
+        }
+      ]
+    },
+    {
+      "restaurantId": "5",
+      "items": [
+        {
+          "id": "1",
+          "name": "Classic Cheese Burger",
+          "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd",
+          "price": 299,
+          "type": "Non-Veg",
+          "description": "Juicy patty with cheese and fresh veggies",
+          "rating": 4.7
+        },
+        {
+          "id": "2",
+          "name": "BBQ Bacon Burger",
+          "image": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5",
+          "price": 14.99,
+          "type": "Non-Veg",
+          "description": "Burger with crispy bacon, BBQ sauce, and cheddar",
+          "rating": 4.9
+        },
+        {
+          "id": "3",
+          "name": "Crispy Fries",
+          "image": "https://images.unsplash.com/photo-1576107232684-1279f390859f",
+          "price": 149,
+          "type": "Veg",
+          "description": "Golden fried potato fries with seasoning",
+          "rating": 4.5
+        },
+        {
+          "id": "4",
+          "name": "Chocolate Shake",
+          "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699",
+          "price": 199,
+          "type": "Veg",
+          "description": "Rich chocolate milkshake topped with cream",
+          "rating": 4.6
+        }
+      ]
+    },
+    {
+      "restaurantId": "7",
+      "items": []
+    },
+    {
+      "restaurantId": "25",
+      "items": [
+        {
+          "id": "2",
+          "name": "frkl",
+          "price": 25,
+          "description": "frmvro",
+          "type": "Veg",
+          "image": "https://plus.unsplash.com/premium_photo-1669295245622-568fecaf293f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "rating": 4.5,
+          "restaurantId": "25"
+        },
+        {
+          "id": "3",
+          "name": "fv",
+          "price": 62,
+          "description": "erer",
+          "type": "Veg",
+          "image": "https://plus.unsplash.com/premium_photo-1669295245622-568fecaf293f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "rating": 4.5,
+          "restaurantId": "25"
+        }
+      ]
+    }
+  ]
+}
