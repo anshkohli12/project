@@ -16,6 +16,9 @@ import ProtectedAdminRoute from '../components/ProtectedAdminRoute';
 import OwnerDashboard from '../pages/OwnerDashboard';
 import OwnerLogin from '../pages/OwnerLogin';
 import ProtectedOwnerRoute from '../components/ProtectedOwnerRoute';
+import CheckoutPage from '../pages/CheckoutPage';
+import UserDashboard from '../pages/UserDashboard';
+import OrderTracking from '../pages/OrderTracking';
 
 const AppRoutes = () => {
   return (
@@ -31,6 +34,7 @@ const AppRoutes = () => {
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/shareblog" element={<ShareBlog />} />
       <Route path="/become-owner" element={<BecomeOwner />} />
+      <Route path="/checkout" element={<CheckoutPage />} />
       
       {/* Admin Routes */}
       <Route path="/admin-login" element={<AdminLogin />} />
@@ -47,8 +51,12 @@ const AppRoutes = () => {
           <OwnerDashboard />
         </ProtectedOwnerRoute>
       } />
+
+      {/* User Dashboard Routes */}
+      <Route path="/user/orders" element={<UserDashboard />} />
+      <Route path="/user/orders/:orderId" element={<OrderTracking />} />
     </Routes>
   );
 };
 
-export default AppRoutes; 
+export default AppRoutes;

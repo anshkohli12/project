@@ -9,6 +9,8 @@ const cartRoutes = require('./routes/cartRoutes');
 const menuRoutes = require('./routes/menuRoutes');
 const restaurantOwnerRoutes = require('./routes/restaurantOwnerRoutes');
 const adminRoutes = require('./routes/adminRoutes');
+const orderRoutes = require('./routes/orderRoutes');
+const orderStatusRoutes = require('./routes/orderStatusRoutes');
 
 const app = express();
 
@@ -29,6 +31,8 @@ app.use('/api/cart', cartRoutes);
 app.use('/api/menu', menuRoutes);
 app.use('/api/owners', restaurantOwnerRoutes);
 app.use('/api/admin', adminRoutes); // Add admin routes
+app.use('/api/orders', orderRoutes);
+app.use('/api/order-status', orderStatusRoutes);
 
 const PORT = process.env.PORT || 5000;
 

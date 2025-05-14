@@ -2,7 +2,32 @@
   "carts": [
     {
       "userId": "1",
-      "items": []
+      "items": [
+        {
+          "itemId": "1",
+          "name": "California Roll",
+          "price": 449,
+          "quantity": 1,
+          "restaurantId": "2",
+          "image": "https://images.unsplash.com/photo-1579584425555-c3ce17fd4351"
+        },
+        {
+          "itemId": "2",
+          "name": "Salmon Nigiri",
+          "price": 6.99,
+          "quantity": 1,
+          "restaurantId": "2",
+          "image": "https://images.unsplash.com/photo-1583623025817-d180a2221d0a"
+        },
+        {
+          "itemId": "3",
+          "name": "Miso Soup",
+          "price": 3.99,
+          "quantity": 1,
+          "restaurantId": "2",
+          "image": "https://images.unsplash.com/photo-1578020190125-f4f7c18bc9cb"
+        }
+      ]
     },
     {
       "userId": "undefined",
@@ -14,6 +39,27 @@
           "quantity": 1,
           "restaurantId": "1",
           "image": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca"
+        }
+      ]
+    },
+    {
+      "userId": "3",
+      "items": [
+        {
+          "itemId": "1",
+          "name": "Margherita Pizza",
+          "price": 399,
+          "quantity": 1,
+          "restaurantId": "1",
+          "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002"
+        },
+        {
+          "itemId": "2",
+          "name": "Pasta Alfredo",
+          "price": 349,
+          "quantity": 3,
+          "restaurantId": "1",
+          "image": "https://images.unsplash.com/photo-1645112411341-6c4fd023714a"
         }
       ]
     }

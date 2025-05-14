@@ -1,55 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaCheckCircle, FaTimesCircle, FaSpinner, FaTruck, FaUtensils, FaCheck } from 'react-icons/fa';
+import axios from 'axios';
 
 const OrderManager = ({ restaurant }) => {
-  // Sample orders data - in a real app, this would come from your API
-  const [orders, setOrders] = useState([
-    {
-      id: 1,
-      customer: 'John Smith',
-      items: ['Cheeseburger', 'Fries', 'Soda'],
-      total: 24.99,
-      status: 'pending',
-      time: '10:30 AM',
-      address: '123 Main St, City'
-    },
-    {
-      id: 2,
-      customer: 'Sarah Johnson',
-      items: ['Pizza', 'Garlic Bread', 'Salad'],
-      total: 32.50,
-      status: 'confirmed',
-      time: '11:15 AM',
-      address: '456 Oak Dr, Town'
-    },
-    {
-      id: 3,
-      customer: 'Michael Brown',
-      items: ['Pad Thai', 'Spring Rolls'],
-      total: 19.75,
-      status: 'preparing',
-      time: '12:00 PM',
-      address: '789 Pine Ave, Village'
-    },
-    {
-      id: 4,
-      customer: 'Emily Davis',
-      items: ['Sushi Combo', 'Miso Soup'],
-      total: 28.50,
-      status: 'ready',
-      time: '12:45 PM',
-      address: '101 Cedar Ln, County'
-    },
-    {
-      id: 5,
-      customer: 'Robert Wilson',
-      items: ['Steak', 'Baked Potato', 'Salad'],
-      total: 42.99,
-      status: 'delivered',
-      time: '1:30 PM',
-      address: '202 Elm St, District'
+  const [orders, setOrders] = useState([]);
+  const [activeTab, setActiveTab] = useState('all');
+
+  useEffect(() => {
+    // Fetch orders for this restaurant from backend
+    if (restaurant && restaurant.id) {
+      axios.get(`http://localhost:5000/api/orders/restaurant/${restaurant.id}`)
+        .then(res => {
+          // Transform backend order data to match UI structure
+          const fetchedOrders = (res.data.orders || [])
+            .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+            .map((order, idx) => ({
+              id: order.id,
+              customer: order.name,
+              items: order.cartItems.map(i => i.name),
+              total: order.cartItems.reduce((sum, i) => sum + (i.price * i.quantity), 0),
+              status: order.status,
+              time: new Date(order.createdAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+              address: order.address
+            }));
+          setOrders(fetchedOrders);
+        });
     }
-  ]);
+  }, [restaurant]);
 
   // Status options and their colors
   const statusConfig = {
@@ -61,11 +38,32 @@ const OrderManager = ({ restaurant }) => {
     cancelled: { label: 'Cancelled', icon: <FaTimesCircle />, color: 'bg-red-100 text-red-800' }
   };
 
+  // Filtered orders by status
+  const filteredOrders = activeTab === 'all'
+    ? orders
+    : orders.filter(order => order.status === activeTab);
+
   // Update order status
-  const updateOrderStatus = (orderId, newStatus) => {
-    setOrders(orders.map(order => 
-      order.id === orderId ? { ...order, status: newStatus } : order
-    ));
+  const updateOrderStatus = async (orderId, newStatus) => {
+    try {
+      await axios.put(`http://localhost:5000/api/order-status/${orderId}/status`, { status: newStatus });
+      // Refetch orders after update to ensure UI is in sync with backend
+      if (restaurant && restaurant.id) {
+        const res = await axios.get(`http://localhost:5000/api/orders/restaurant/${restaurant.id}`);
+        const fetchedOrders = (res.data.orders || []).map((order, idx) => ({
+          id: order.id,
+          customer: order.name,
+          items: order.cartItems.map(i => i.name),
+          total: order.cartItems.reduce((sum, i) => sum + (i.price * i.quantity), 0),
+          status: order.status,
+          time: new Date(order.createdAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+          address: order.address
+        }));
+        setOrders(fetchedOrders);
+      }
+    } catch (err) {
+      alert('Failed to update order status.');
+    }
   };
 
   if (!restaurant) {
@@ -85,25 +83,46 @@ const OrderManager = ({ restaurant }) => {
       {/* Filter Tabs */}
       <div className="bg-white p-4 rounded-lg shadow-md">
         <div className="flex space-x-2 overflow-x-auto pb-2">
-          <button className="px-4 py-2 text-sm font-medium bg-orange-100 text-orange-800 rounded-md">
+          <button
+            className={`px-4 py-2 text-sm font-medium rounded-md ${activeTab === 'all' ? 'bg-orange-100 text-orange-800' : 'text-gray-600 hover:bg-gray-100'}`}
+            onClick={() => setActiveTab('all')}
+          >
             All Orders
           </button>
-          <button className="px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-md">
+          <button
+            className={`px-4 py-2 text-sm font-medium rounded-md ${activeTab === 'pending' ? 'bg-orange-100 text-orange-800' : 'text-gray-600 hover:bg-gray-100'}`}
+            onClick={() => setActiveTab('pending')}
+          >
             Pending
           </button>
-          <button className="px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-md">
+          <button
+            className={`px-4 py-2 text-sm font-medium rounded-md ${activeTab === 'confirmed' ? 'bg-orange-100 text-orange-800' : 'text-gray-600 hover:bg-gray-100'}`}
+            onClick={() => setActiveTab('confirmed')}
+          >
             Confirmed
           </button>
-          <button className="px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-md">
+          <button
+            className={`px-4 py-2 text-sm font-medium rounded-md ${activeTab === 'preparing' ? 'bg-orange-100 text-orange-800' : 'text-gray-600 hover:bg-gray-100'}`}
+            onClick={() => setActiveTab('preparing')}
+          >
             Preparing
           </button>
-          <button className="px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-md">
+          <button
+            className={`px-4 py-2 text-sm font-medium rounded-md ${activeTab === 'ready' ? 'bg-orange-100 text-orange-800' : 'text-gray-600 hover:bg-gray-100'}`}
+            onClick={() => setActiveTab('ready')}
+          >
             Ready
           </button>
-          <button className="px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-md">
+          <button
+            className={`px-4 py-2 text-sm font-medium rounded-md ${activeTab === 'delivered' ? 'bg-orange-100 text-orange-800' : 'text-gray-600 hover:bg-gray-100'}`}
+            onClick={() => setActiveTab('delivered')}
+          >
             Delivered
           </button>
-          <button className="px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-md">
+          <button
+            className={`px-4 py-2 text-sm font-medium rounded-md ${activeTab === 'cancelled' ? 'bg-orange-100 text-orange-800' : 'text-gray-600 hover:bg-gray-100'}`}
+            onClick={() => setActiveTab('cancelled')}
+          >
             Cancelled
           </button>
         </div>
@@ -115,9 +134,9 @@ const OrderManager = ({ restaurant }) => {
           <h3 className="text-lg font-medium text-gray-700">Today's Orders</h3>
         </div>
         
-        {orders.length === 0 ? (
+        {filteredOrders.length === 0 ? (
           <div className="p-6 text-center text-gray-500">
-            <p>No orders found for today.</p>
+            <p>No orders found for this status.</p>
           </div>
         ) : (
           <div className="overflow-x-auto">
@@ -134,7 +153,7 @@ const OrderManager = ({ restaurant }) => {
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
-                {orders.map(order => (
+                {filteredOrders.map(order => (
                   <tr key={order.id} className="hover:bg-gray-50">
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">#{order.id}</td>
                     <td className="px-6 py-4 whitespace-nowrap">
@@ -181,12 +200,8 @@ const OrderManager = ({ restaurant }) => {
           </div>
         )}
       </div>
-
-      <div className="p-4 text-center text-sm text-gray-500">
-        This is a demo order management interface. In a real application, this would connect to your order API.
-      </div>
     </div>
   );
 };
 
-export default OrderManager; 
+export default OrderManager;

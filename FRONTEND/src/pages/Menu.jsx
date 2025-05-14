@@ -724,7 +724,7 @@ const Menu = () => {
                         </span>
                       </div>
                       <button 
-                        onClick={() => navigate('/')}
+                        onClick={() => navigate('/checkout')}
                         className="w-full py-3 bg-orange-500 text-white rounded-lg font-medium hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/30"
                       >
                         Proceed to Checkout
@@ -837,4 +837,4 @@ const Menu = () => {
   );
 };
 
-export default Menu; 
+export default Menu;
